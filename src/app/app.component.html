@@ -1,0 +1,47 @@
+<mat-toolbar>
+
+<button mat-icon-button *ngIf="sidenav.mode==='over'" (click)="sidenav.toggle()">
+  <mat-icon *ngIf="!sidenav.opened">
+    menu
+  </mat-icon>
+
+  <mat-icon *ngIf="sidenav.opened">
+    close
+  </mat-icon>
+</button>
+Gestion d'Apprenants d'ODK
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav"><br>
+
+    <img src="assets/images/images.jpg" alt="">
+    <h4 class="name">XXXXX YYYY</h4><br>
+
+    <mat-divider></mat-divider><br>
+    
+    <button mat-button class="menu-button" routerLink="/">
+      <mat-icon>home</mat-icon>
+      <span>Accueil</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/validation">
+      <mat-icon>done_outline</mat-icon>
+      <span>Validation</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/crud">
+      <mat-icon>border_color</mat-icon>
+      <span>CRUD</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/listeApprenant">
+      <mat-icon>list</mat-icon>
+      <span>Liste Apprenant</span>
+    </button>
+     
+    
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z4">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

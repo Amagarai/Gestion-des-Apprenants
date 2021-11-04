@@ -1,0 +1,33 @@
+p{
+    background-color: rgb(33, 33, 197);
+    margin-top: -300px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+table{
+    width: 1000px;
+    background-color: rgb(240, 218, 191);
+    border-style: solid;
+    border-color: black;
+    
+     
+    
+}
+ng-container{
+    text-align: center;
+    
+}
+th{
+
+    font-size: 26px;
+    color: black;
+}
+
+td{
+
+    font-size: 20px;
+}
